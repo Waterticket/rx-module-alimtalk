@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<grants>
+	</grants>
+	<actions>
+		<!-- 관리자 액션 -->
+		<action name="dispAlimtalkAdminConfig" class="Controllers\Admin" menu_name="alimtalk" admin_index="true" />
+		<action name="procAlimtalkAdminInsertConfig" class="Controllers\Admin" />
+		<!-- 메인 화면 예제 -->
+		<action name="dispAlimtalkIndex" class="Controllers\Index" index="true" />
+	</actions>
+	<menus>
+		<menu name="alimtalk" type="all">
+			<title xml:lang="ko">카카오 알림톡 모듈</title>
+		</menu>
+	</menus>
+</module>
