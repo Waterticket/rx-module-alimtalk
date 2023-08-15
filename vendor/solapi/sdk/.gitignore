@@ -1,0 +1,14 @@
+.DS_Store
+.vscode/
+log.txt
+out/
+*.swp
+.idea/
+config.php
+*.real.php
+debug/
+
+
+# Composer gitignore
+composer.phar
+/vendor/

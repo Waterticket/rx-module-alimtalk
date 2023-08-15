@@ -21,11 +21,10 @@
 	
 	<section class="section">
 		<div class="x_control-group">
-			<label class="x_control-label" for="example_config">{$lang->cmd_alimtalk_example_config}</label>
+			<label class="x_control-label" for="driver_name">{$lang->driver_name}</label>
 			<div class="x_controls">
-				<select name="example_config" id="example_config">
-					<option value="Y" selected="selected"|cond="$alimtalk_config->example_config !== 'N'">{$lang->cmd_yes}</option>
-					<option value="N" selected="selected"|cond="$alimtalk_config->example_config === 'N'">{$lang->cmd_no}</option>
+				<select name="driver_name" id="driver_name">
+					<option value="dummy" selected="selected"|cond="$alimtalk_config->driver_name === 'dummy'">{$lang->driver_dummy}</option>
 				</select>
 			</div>
 		</div>

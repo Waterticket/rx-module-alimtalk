@@ -2,6 +2,8 @@
 
 namespace Rhymix\Modules\Alimtalk;
 
+include 'vendor/autoload.php';
+
 /**
  * 카카오 알림톡 모듈
  * 
@@ -29,6 +31,8 @@ class Base extends \ModuleObject
 		if (self::$_config_cache === null)
 		{
 			self::$_config_cache = \ModuleModel::getModuleConfig($this->module) ?: new \stdClass;
+
+			if (!isset(self::$_config_cache->driver_name)) self::$_config_cache->driver_name = 'dummy'; // 드라이버 명
 		}
 		return self::$_config_cache;
 	}
